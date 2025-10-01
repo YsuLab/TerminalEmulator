@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1759138496388",
+    "text": "fix the prompt history array",
+    "completed": false
+  },
+  {
+    "id": "1759134221682",
+    "text": "the file directory system including ls, cd, pwd, touch, etc.\nits probably easier to use a tree data structure.",
+    "completed": false
+  },
+  {
+    "id": "1759133979721",
+    "text": "Add the who am i command",
+    "completed": false
+  },
+  {
+    "id": "1759133947966",
+    "text": "Fix the loader",
+    "completed": true
+  }
+]

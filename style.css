@@ -1,0 +1,132 @@
+:root {
+  --bg: #050506;
+  --panel: #0a0a0a;
+  --text: rgb(29, 154, 1);
+  /* main terminal green */
+  --text-dim: #86cf86;
+  /* dim green */
+  --accent: #7c4dff;
+  /* subtle cosmic accent */
+  --border-outer: rgba(255, 255, 255, 0.06);
+  --border-inner: rgba(255, 255, 255, 0.035);
+}
+
+/* Deleting this block brakes the input box, I have never been confused this much my life,
+especially this late of an hour. */
+html,
+body,
+input {
+  font-family: 'Space Mono', Courier, monospace;
+  font-size: 1.1rem;
+  background-color: black;
+  color: rgb(29, 154, 1);
+  text-shadow: 0 0 2px #00ff00
+}
+
+
+html, body {
+  font-family: 'Space Mono', Courier, monospace;
+  font-size: 1.1rem;
+  background-color: var(--panel);
+  color: rgb(29, 154, 1);
+  text-shadow: 0 0 2px #00ff00; 
+  --color: #1e1e1e;
+
+  /* Background pattern vvv */
+  background-color: #0c0c0c;
+  background-image: linear-gradient(0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent);
+      background-size: 55px 55px;
+
+}
+
+#ascii-art {
+  font-size: 0.8rem;
+  color: black;
+}
+
+.wrapper {
+
+  background-color: var(--bg);
+  overflow: scroll;
+  padding: 1%;
+  scroll-behavior: initial;
+  scroll-snap-type: mandatory;
+  scrollbar-color: #00ff0000 transparent;
+  height: 50%;
+  width: 50%;
+  min-width: 50vw;
+
+  border: 3px solid var(--border-outer);
+  border-radius: 10px;
+  box-shadow: 25px 25px 0px rgb(0, 0, 0);
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+
+
+}
+
+@media screen {
+  .wrapper {
+    animation: scanlines infinite 55s linear;
+  }
+}
+
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 -10px;
+  }
+}
+
+.Terminal {
+
+  overflow: scroll;
+  border: none;
+  outline: none;
+  scrollbar-width: none;
+}
+
+.inputLine {
+  display: inline-block;
+  line-height: 100px;
+  align-items: center;
+
+  white-space: nowrap;
+  justify-content: center;
+}
+
+.inputBox {
+  background-color: var(--bg);
+  color: rgb(29, 154, 1);
+  border: none;
+  outline: none;
+  width: 100%;
+}
