@@ -73,7 +73,8 @@ html, body {
   scrollbar-color: #00ff0000 transparent;
   height: 50%;
   width: 50%;
-  min-width: 50vw;
+  min-width: 60vw;
+  min-height: 60vh;
 
   border: 3px solid var(--border-outer);
   border-radius: 10px;
@@ -88,6 +89,45 @@ html, body {
   margin: auto;
 
 
+}
+@media only screen and (max-height: 3000px) {
+
+  html, body {
+    /* Background pattern vvv */
+  background-color: #0c0c0c;
+  background-image: linear-gradient(0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent);
+      background-size: 40px 40px;
+
+  }
+  .wrapper{
+    transform: scale(0.8);
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    margin: 50px;
+    margin-top: 0px;
+    margin-left: 3%;
+  }
+  
 }
 
 @media screen {

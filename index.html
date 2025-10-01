@@ -7,11 +7,66 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.google.com/specimen/Space+Mono" rel="stylesheet">
     <meta name="description" content="A brief description of my web page">
-
-    <head>
-        <script type="text/javascript" src=
-        "https://code.jquery.com/jquery-1.7.1.min.js">
     </script>
+
+    
+        <style>
+    /* style the elements with CSS */
+    #pleaserotate-graphic{
+        fill: rgb(255, 255, 255);
+    }
+
+    #pleaserotate-backdrop {
+        font-size: 0.8rem;
+        color: #ffffff;
+  background-color: #0c0c0c;
+
+        background-image: linear-gradient(0deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(90deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent);
+      background-size: 40px 40px;
+  }
+  #pleaserotate-message {
+ font-family: 'Space Mono', Courier, monospace;
+  font-size: 1.1rem;
+  color: rgb(29, 154, 1);
+  text-shadow: 0 0 2px #00ff00
+  }
+    
+</style>
+
+<script>
+    /* you can pass in options here */
+    PleaseRotateOptions = {
+        startOnPageLoad: true,
+        onHide: function(){},
+        onShow: function(){},
+        forcePortrait: false,
+        message: "This is a Desktop experince, However you may try it in landscape",
+        subMessage: "or click to continue",
+        allowClickBypass: true,
+        onlyMobile: true,
+        zIndex: 1000,
+    };
+</script>
+<script src="pleaserotate.js"></script>
     </head>
 
     <body>
@@ -36,5 +91,6 @@ Welcome to Yaser's Terminal Emulator! Type 'help' to see available commands.
             </div>
         </div>
     </body>
-    <script src="script.js" src="" defer></script>
+
+    <script src="script.js" defer></script>
 </html>

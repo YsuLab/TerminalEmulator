@@ -1,5 +1,35 @@
 [
   {
+    "id": "1759327868804",
+    "text": "edit the date command so it returns based on the users region/timezone, only if you ever face an issue",
+    "completed": false
+  },
+  {
+    "id": "1759327629757",
+    "text": "fix the loading spinner error",
+    "completed": false
+  },
+  {
+    "id": "1759310730846",
+    "text": "add an \"easy mode\" just a simple script",
+    "completed": false
+  },
+  {
+    "id": "1759307487975",
+    "text": "add a this website doesn't allow fetching or is offline",
+    "completed": true
+  },
+  {
+    "id": "1759307465235",
+    "text": "fix ping timing",
+    "completed": true
+  },
+  {
+    "id": "1759307442456",
+    "text": "add a prompt for phone users to flip to horizontal mode",
+    "completed": true
+  },
+  {
     "id": "1759138496388",
     "text": "fix the prompt history array",
     "completed": false
@@ -12,7 +42,7 @@
   {
     "id": "1759133979721",
     "text": "Add the who am i command",
-    "completed": false
+    "completed": true
   },
   {
     "id": "1759133947966",
